@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour {
+public class PlayerMovement : MonoBehaviour
+{
 
-	public float speed = 4f;
+    public float speed = 4f;
     private float speedNeg = 0;
 
     private Rigidbody2D body2d;
@@ -12,7 +13,7 @@ public class PlayerMovement : MonoBehaviour {
 
     public GameObject cam;
 
-    private string from;
+    private string from = "Down";
 
     void Awake()
     {
@@ -20,64 +21,79 @@ public class PlayerMovement : MonoBehaviour {
         animator = GetComponent<Animator>();
 
         speedNeg = speed - speed - speed;
-
     }
 
     // Update is called once per frame
     void Update()
     {
         cam.transform.position = new Vector3(GetComponent<Transform>().position.x, GetComponent<Transform>().position.y, -10);
-        
+
+        AnimatorStateInfo animationState = animator.GetCurrentAnimatorStateInfo(0);
+        AnimatorClipInfo[] animatorClip = animator.GetCurrentAnimatorClipInfo(0);
+        float Time = animatorClip[0].clip.length * animationState.normalizedTime;
+
+        animator.speed = 1;
+
         if (Input.GetKey("w") && Input.GetKey("d"))
         {
             body2d.velocity = new Vector2(speed, speed);
-            changeOrientation("Up");
+            changeOrientation("Up", Time);
         }
-        else if (Input.GetKey("w") && Input.GetKey("a"))            
+        else if (Input.GetKey("w") && Input.GetKey("a"))
         {
             body2d.velocity = new Vector2(speedNeg, speed);
-            changeOrientation("Up");
+            changeOrientation("Up", Time);
         }
         else if (Input.GetKey("s") && Input.GetKey("a"))
         {
             body2d.velocity = new Vector2(speedNeg, speedNeg);
-            changeOrientation("Down");
+            changeOrientation("Down", Time);
         }
         else if (Input.GetKey("s") && Input.GetKey("d"))
         {
             body2d.velocity = new Vector2(speed, speedNeg);
-            changeOrientation("Down");
+            changeOrientation("Down", Time);
         }
         else if (Input.GetKey("w"))
         {
             body2d.velocity = new Vector2(0, speed);
-            changeOrientation("Up");
+            changeOrientation("Up", Time);
         }
         else if (Input.GetKey("s"))
         {
             body2d.velocity = new Vector2(0, speedNeg);
-            changeOrientation("Down");
+            changeOrientation("Down", Time);
         }
         else if (Input.GetKey("a"))
         {
             body2d.velocity = new Vector2(speedNeg, 0);
-            changeOrientation("Left");
+            changeOrientation("Left", Time);
         }
         else if (Input.GetKey("d"))
         {
             body2d.velocity = new Vector2(speed, 0);
-            changeOrientation("Right");        
+            changeOrientation("Right", Time);
         }
         else
         {
             body2d.velocity = new Vector2(0, 0);
-            //changeOrientation("Idle");
+            if (from != "idle")
+            {
+                animator.speed = 1000;
+            }
+            from = "idle";
+            //changeOrientation("Idle-" + from, Time);           
         }
     }
 
-    private void changeOrientation(string movement)
+    private void changeOrientation(string movement, float Time)
     {
-        if (animator.GetCurrentAnimatorStateInfo(0).IsName("player_idle") || from != movement)
+        //print(Time);      
+        if (Time >= 0.95 && from == movement)
+        {
+            animator.SetTrigger(movement);
+        }
+        else if (from != movement)
         {
             animator.SetTrigger(movement);
             from = movement;

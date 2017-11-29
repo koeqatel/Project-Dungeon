@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 0ca99b55191522b4fb17a3400422f7b4
-timeCreated: 1511431683
+timeCreated: 1511941573
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -28,6 +28,26 @@ TextureImporter:
     21300042: playerSheet_21
     21300044: playerSheet_22
     21300046: playerSheet_23
+    21300048: playerSheet_24
+    21300050: playerSheet_25
+    21300052: playerSheet_26
+    21300054: playerSheet_27
+    21300056: playerSheet_28
+    21300058: playerSheet_29
+    21300060: playerSheet_30
+    21300062: playerSheet_31
+    21300064: playerSheet_32
+    21300066: playerSheet_33
+    21300068: playerSheet_34
+    21300070: playerSheet_35
+    21300072: playerSheet_36
+    21300074: playerSheet_37
+    21300076: playerSheet_38
+    21300078: playerSheet_39
+    21300080: playerSheet_40
+    21300082: playerSheet_41
+    21300084: playerSheet_42
+    21300086: playerSheet_43
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -114,7 +134,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 56
+        y: 54
         width: 16
         height: 16
       alignment: 0
@@ -127,7 +147,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 17
-        y: 56
+        y: 54
         width: 16
         height: 16
       alignment: 0
@@ -140,7 +160,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 34
-        y: 56
+        y: 54
         width: 16
         height: 16
       alignment: 0
@@ -152,8 +172,8 @@ TextureImporter:
       name: playerSheet_3
       rect:
         serializedVersion: 2
-        x: 51
-        y: 56
+        x: 68
+        y: 54
         width: 16
         height: 16
       alignment: 0
@@ -165,8 +185,8 @@ TextureImporter:
       name: playerSheet_4
       rect:
         serializedVersion: 2
-        x: 68
-        y: 56
+        x: 85
+        y: 54
         width: 16
         height: 16
       alignment: 0
@@ -178,8 +198,8 @@ TextureImporter:
       name: playerSheet_5
       rect:
         serializedVersion: 2
-        x: 85
-        y: 56
+        x: 102
+        y: 54
         width: 16
         height: 16
       alignment: 0
@@ -191,8 +211,8 @@ TextureImporter:
       name: playerSheet_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 38
+        x: 136
+        y: 54
         width: 16
         height: 16
       alignment: 0
@@ -204,8 +224,8 @@ TextureImporter:
       name: playerSheet_7
       rect:
         serializedVersion: 2
-        x: 17
-        y: 38
+        x: 153
+        y: 54
         width: 16
         height: 16
       alignment: 0
@@ -217,8 +237,8 @@ TextureImporter:
       name: playerSheet_8
       rect:
         serializedVersion: 2
-        x: 34
-        y: 38
+        x: 170
+        y: 54
         width: 16
         height: 16
       alignment: 0
@@ -230,8 +250,8 @@ TextureImporter:
       name: playerSheet_9
       rect:
         serializedVersion: 2
-        x: 51
-        y: 38
+        x: 187
+        y: 54
         width: 16
         height: 16
       alignment: 0
@@ -243,8 +263,8 @@ TextureImporter:
       name: playerSheet_10
       rect:
         serializedVersion: 2
-        x: 68
-        y: 38
+        x: 204
+        y: 54
         width: 16
         height: 16
       alignment: 0
@@ -256,8 +276,8 @@ TextureImporter:
       name: playerSheet_11
       rect:
         serializedVersion: 2
-        x: 85
-        y: 38
+        x: 221
+        y: 54
         width: 16
         height: 16
       alignment: 0
@@ -270,7 +290,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 20
+        y: 36
         width: 16
         height: 16
       alignment: 0
@@ -283,7 +303,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 17
-        y: 20
+        y: 36
         width: 16
         height: 16
       alignment: 0
@@ -296,7 +316,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 34
-        y: 20
+        y: 36
         width: 16
         height: 16
       alignment: 0
@@ -308,8 +328,8 @@ TextureImporter:
       name: playerSheet_15
       rect:
         serializedVersion: 2
-        x: 51
-        y: 20
+        x: 68
+        y: 36
         width: 16
         height: 16
       alignment: 0
@@ -321,8 +341,8 @@ TextureImporter:
       name: playerSheet_16
       rect:
         serializedVersion: 2
-        x: 68
-        y: 20
+        x: 85
+        y: 36
         width: 16
         height: 16
       alignment: 0
@@ -334,8 +354,8 @@ TextureImporter:
       name: playerSheet_17
       rect:
         serializedVersion: 2
-        x: 85
-        y: 20
+        x: 102
+        y: 36
         width: 16
         height: 16
       alignment: 0
@@ -347,8 +367,8 @@ TextureImporter:
       name: playerSheet_18
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2
+        x: 136
+        y: 36
         width: 16
         height: 16
       alignment: 0
@@ -360,8 +380,8 @@ TextureImporter:
       name: playerSheet_19
       rect:
         serializedVersion: 2
-        x: 17
-        y: 2
+        x: 153
+        y: 36
         width: 16
         height: 16
       alignment: 0
@@ -373,8 +393,8 @@ TextureImporter:
       name: playerSheet_20
       rect:
         serializedVersion: 2
-        x: 34
-        y: 2
+        x: 0
+        y: 18
         width: 16
         height: 16
       alignment: 0
@@ -386,8 +406,8 @@ TextureImporter:
       name: playerSheet_21
       rect:
         serializedVersion: 2
-        x: 51
-        y: 2
+        x: 17
+        y: 18
         width: 16
         height: 16
       alignment: 0
@@ -399,8 +419,8 @@ TextureImporter:
       name: playerSheet_22
       rect:
         serializedVersion: 2
-        x: 68
-        y: 2
+        x: 34
+        y: 18
         width: 16
         height: 16
       alignment: 0
@@ -412,8 +432,268 @@ TextureImporter:
       name: playerSheet_23
       rect:
         serializedVersion: 2
+        x: 68
+        y: 18
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSheet_24
+      rect:
+        serializedVersion: 2
         x: 85
-        y: 2
+        y: 18
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSheet_25
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 18
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSheet_26
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 18
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSheet_27
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 18
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSheet_28
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 18
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSheet_29
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 18
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSheet_30
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 18
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSheet_31
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 18
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSheet_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSheet_33
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSheet_34
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSheet_35
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSheet_36
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSheet_37
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSheet_38
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSheet_39
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSheet_40
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSheet_41
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSheet_42
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSheet_43
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 0
         width: 16
         height: 16
       alignment: 0
