@@ -1,0 +1,34 @@
+Dungeon Crawler(Name to be changed)
+
+1. different types of enemies: 	- Water 
+									- Ice
+								- Fire 
+									- Lava/Magma
+								- Earth 
+									- Metal
+								- Air 
+								- Grass 
+									- Poison
+								- Ghost
+									- Spirit: Can take over enemies and objects to make them stronger
+								- Normal
+								
+2. Enemies can be immune, weak or strong against different types of weapons/damage, weapons are: Melee, Ranged and Magic
+
+3. Different kind of floors: Forest, Mine, Castle, Hell and Dark Realm
+
+4. Tiers of items, from Super Rare to Commen
+
+5. Jewelry for stat buffs, Rings, Necklaces, etc.
+	- Adding special places for these
+	
+5. An invertory system that different types of items take up different number of block of spaces
+	- The player has number slot for items, potions, etc. a player can only hold 1 type of weapon(Melee, Ranged and Magic) but can have more in his/her inverntory
+
+6. The player has Health, Stamina and Mana
+	- Different weapons take different amounts of stamina/mana
+	- Reloading/Casting delay/timings
+
+7. Special areas where if a player has a type of weapon(Water, Fire etc.) they can shoot it at a specific point to get chests, items, etc.
+
+8. Bombs, different kind of bombs, weapons which have different sizes of area of effect, environmental damage
