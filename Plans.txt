@@ -32,3 +32,5 @@ Dungeon Crawler(Name to be changed)
 7. Special areas where if a player has a type of weapon(Water, Fire etc.) they can shoot it at a specific point to get chests, items, etc.
 
 8. Bombs, different kind of bombs, weapons which have different sizes of area of effect, environmental damage
+
+9. You can hold any item as a melee weapon but does little damage(could make achievements aswell with that)

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<WeaponCollection>
+  <Weapons>
+    <BaseWeapon>
+      <ItemId>1</ItemId>
+      <Damage>10</Damage>
+      <ChargeSpeed>5</ChargeSpeed>
+      <StaminaCost>5</StaminaCost>
+      <ManaCost>0</ManaCost>
+      <WeaponType>Ranged</WeaponType>
+      <WeaponDamageType>Normal</WeaponDamageType>
+    </BaseWeapon>
+    <BaseWeapon>
+      <ItemId>2</ItemId>
+      <Damage>30</Damage>
+      <ChargeSpeed>2</ChargeSpeed>
+      <StaminaCost>10</StaminaCost>
+      <ManaCost>0</ManaCost>
+      <WeaponType>Ranged</WeaponType>
+      <WeaponDamageType>Water</WeaponDamageType>
+    </BaseWeapon>
+  </Weapons>
+</WeaponCollection>

@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     private Animator animator;
 
     public GameObject cam;
+    public GameObject Inventory;
 
     private string from = "Down";
 
@@ -83,6 +84,25 @@ public class PlayerMovement : MonoBehaviour
             }
             from = "idle";
             //changeOrientation("Idle-" + from, Time);           
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D coll)
+    {
+        var itemPickedup = coll.gameObject.GetComponent<BaseWeaponRanged>();
+        if (coll.gameObject.tag == "Items")
+        {
+            InventoryWindow inv = Inventory.GetComponent<InventoryWindow>();
+
+            for(int i = 0; i < inv.totalSlotCount - 1; i++)
+            {
+                if (inv.inventoryItems[i] == null)
+                {
+                    inv.inventoryItems[i] = itemPickedup;
+                    Destroy(coll.gameObject);
+                    break;
+                }
+            }
         }
     }
 
