@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class InventoryWindow : MonoBehaviour
+public class InventoryManager : MonoBehaviour
 {
 
     public int startPositionX;
@@ -23,14 +23,20 @@ public class InventoryWindow : MonoBehaviour
 
     private bool isActive = false;
 
-    private GameObject[] inventorySlots;
-    public BaseWeaponRanged[] inventoryItems;
+    private InventoryListClass inventorySlots;
+    private InventoryClass inventoryItems;
+    private InventoryClass Slot;
+
+    private List<InventoryClass> gameObjectList;
 
     void Start()
     {
-        CreateInvSlots();
+        inventorySlots = new InventoryListClass();
+        inventoryItems = new InventoryClass();
+        Slot = new InventoryClass();
+        gameObjectList = new List<InventoryClass>();
 
-        inventoryItems = new BaseWeaponRanged[totalSlotCount];
+        CreateInvSlots();
         GameObject.Find("Inventory").transform.localScale = new Vector3(0, 0, 0);
     }
 
@@ -52,17 +58,15 @@ public class InventoryWindow : MonoBehaviour
 
         for (int i = 0; i < totalSlotCount; i++)
         {
-            if (inventoryItems[i] != null)
-            {
+            //if (inventoryItems[i] != null)
+            //{
                 
-            }
+            //}
         }
     }
 
     private void CreateInvSlots()
     {
-        inventorySlots = new GameObject[totalSlotCount];
-
         posX = startPositionX;
         posY = startPositionY;
 
@@ -72,8 +76,8 @@ public class InventoryWindow : MonoBehaviour
             itemSlot.name = "ItemSlot" + i.ToString();
             itemSlot.GetComponent<Toggle>().group = itemSlotToggleGroup;
 
-            inventorySlots[i] = itemSlot;
-            //inventorySlots.Add(itemSlot);
+            Slot.inventorySlots = itemSlot;
+            gameObjectList.Add(Slot);
 
             itemSlot.transform.SetParent(this.gameObject.transform);
             itemSlot.GetComponent<RectTransform>().localPosition = new Vector3(posX, posY, 0);
@@ -89,6 +93,24 @@ public class InventoryWindow : MonoBehaviour
 
                 posY = posY - (int)itemSlot.GetComponent<RectTransform>().rect.width - 5;
                 posX = startPositionX;
+            }
+        }
+        inventorySlots.inventory = gameObjectList;
+    }
+
+    public void AddItemToInv(Collision2D item)
+    {
+        if (item.gameObject.tag == "Items")
+        {
+            var itemPickedup = item.gameObject.GetComponent<BaseWeaponRanged>();
+
+            foreach (InventoryClass inv in inventorySlots.inventory)
+            {
+                if(inv.inventorySlots != null && inv.inventoryItems == null)
+                {
+                    inv.inventoryItems = itemPickedup;
+                    break;
+                }
             }
         }
     }

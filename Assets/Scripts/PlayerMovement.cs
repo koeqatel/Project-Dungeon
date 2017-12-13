@@ -89,21 +89,8 @@ public class PlayerMovement : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D coll)
     {
-        var itemPickedup = coll.gameObject.GetComponent<BaseWeaponRanged>();
-        if (coll.gameObject.tag == "Items")
-        {
-            InventoryWindow inv = Inventory.GetComponent<InventoryWindow>();
-
-            for(int i = 0; i < inv.totalSlotCount - 1; i++)
-            {
-                if (inv.inventoryItems[i] == null)
-                {
-                    inv.inventoryItems[i] = itemPickedup;
-                    Destroy(coll.gameObject);
-                    break;
-                }
-            }
-        }
+        InventoryManager inv = new InventoryManager();
+        inv.AddItemToInv(coll);
     }
 
     private void changeOrientation(string movement, float Time)

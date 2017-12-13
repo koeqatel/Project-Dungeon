@@ -1,25 +1,27 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ItemCollection>
-  <Items>
-    <NewBaseItem>
+﻿<WeaponCollection>
+  <Weapons>
+    <NewWeapon>
       <ItemId>1</ItemId>
-	  <DataId>1</DataId>
-	  <ItemDescription>Pew pew pew</ItemDescription>
-	  
-	  <ItemType>Weapon</ItemType>
-	  <WeaponType>Ranged</WeaponType>
+      <DataId>1</DataId>
+      <ItemName>Pistol</ItemName>
+      <ItemDescription>Pew pew pew</ItemDescription>
+
+      <ItemType>Weapon</ItemType>
+      <WeaponType>Ranged</WeaponType>
       <WeaponDamageType>Normal</WeaponDamageType>
-	  
-	  <ChargeSpeed>5</ChargeSpeed>
-	  <StaminaCost>5</StaminaCost>
+
+      <ChargeSpeed>5</ChargeSpeed>
+      <StaminaCost>5</StaminaCost>
       <ManaCost>0</ManaCost>
-	  
-	  <MeleeDamage>0</MeleeDamage>
-	  <RangedDamage>10</RangedDamage>
-	  <MagicDamage>0</MagicDamage>
-	  <ExplosionDamage>0</ExplosionDamage>
-	  
-	  <SocketCount>0</SocketCount>
-	</NewBaseItem>
-  </Items>
-</ItemCollection>
+
+      <MeleeDamage>0</MeleeDamage>
+      <RangedDamage>10</RangedDamage>
+      <MagicDamage>0</MagicDamage>
+      <ExplosionDamage>0</ExplosionDamage>
+
+      <SocketCount>0</SocketCount>
+
+      <Sprite>Pistol</Sprite>
+    </NewWeapon>
+  </Weapons>
+</WeaponCollection>

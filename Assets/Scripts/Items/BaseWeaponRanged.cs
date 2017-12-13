@@ -1,33 +1,33 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class BaseWeaponRanged : MonoBehaviour {
+public class BaseWeaponRanged : MonoBehaviour
+{
 
-    public Sprite BulletSprite;
-    public GameObject Database;
+    public Sprite bulletSprite;
+    public GameObject database;
 
-    public string weaponId;
+    public int weaponId;
+
+    private WeaponClass weaponRanged = new WeaponClass();
 
     // Use this for initialization
-    void Start () {
-        SerializeWeapon();
-    }
-	
-	// Update is called once per frame
-	void Update () {
-
-    }
-
-    private void SerializeWeapon()
+    void Start()
     {
-        ItemDatabase itemDatabase = Database.GetComponent<ItemDatabase>();
-        BaseWeaponList weapons = itemDatabase.baseWeapon;
+        serializeWeapon();
+    }
 
-        foreach (BaseWeaponClass weapon in weapons.weapons)
+    private void serializeWeapon()
+    {
+        ItemDatabase itemDatabase = database.GetComponent<ItemDatabase>();
+        WeaponListClass weapons = itemDatabase.weapon;
+
+        foreach (WeaponClass weapon in weapons.weapons)
         {
             if (weaponId == weapon.itemId)
             {
-                baseWeapon = weapon;
+                weaponRanged = weapon;
                 break;
             }
         }
