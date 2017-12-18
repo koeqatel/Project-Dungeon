@@ -204,7 +204,7 @@ public class BatAI : MonoBehaviour
 
         float distance = Vector2.Distance(batPos, targetPos);
 
-        if (distance < 0.1f)
+        if (distance < 0.5f)
         {
             print("Ouch! I got hit!");
         }
