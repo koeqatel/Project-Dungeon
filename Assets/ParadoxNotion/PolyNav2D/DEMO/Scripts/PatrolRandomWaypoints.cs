@@ -42,9 +42,11 @@ public class PatrolRandomWaypoints : MonoBehaviour{
 		agent.SetDestination( WPoints[Random.Range(0, WPoints.Count)] );
 	}
 
-	void OnDrawGizmosSelected(){
-		for ( int i = 0; i < WPoints.Count; i++){
-			Gizmos.DrawSphere(WPoints[i], 0.05f);			
-		}
-	}
+    void OnDrawGizmosSelected()
+    {
+        for (int i = 0; i < WPoints.Count; i++)
+        {
+            Gizmos.DrawSphere(WPoints[i], 0.05f);
+        }
+    }
 }
