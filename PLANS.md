@@ -1,4 +1,4 @@
-Dungeon Crawler(Name to be changed)
+# Dungeon Crawler(Name to be changed)
 
 1. different types of enemies: 	- Water 
 									- Ice
