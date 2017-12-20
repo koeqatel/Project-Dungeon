@@ -5,7 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WorldEntity : MonoBehaviour
+public class WorldEntity
 {
     /// <summary>
     /// This is an unique item id

@@ -21,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
         body2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
 
+        speedNeg = speed - speed - speed;
     }
 
     // Update is called once per frame
@@ -28,13 +29,11 @@ public class PlayerMovement : MonoBehaviour
     {
         cam.transform.position = new Vector3(GetComponent<Transform>().position.x, GetComponent<Transform>().position.y, -10);
 
-        speedNeg = speed - speed - speed;
-
         AnimatorStateInfo animationState = animator.GetCurrentAnimatorStateInfo(0);
         AnimatorClipInfo[] animatorClip = animator.GetCurrentAnimatorClipInfo(0);
         float Time = animatorClip[0].clip.length * animationState.normalizedTime;
 
-        animator.speed = speed / 4;
+        animator.speed = 1;
 
         if (Input.GetKey("w") && Input.GetKey("d"))
         {
@@ -90,8 +89,7 @@ public class PlayerMovement : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D coll)
     {
-        InventoryManager inv = new InventoryManager();
-        inv.AddItemToInv(coll);
+        //TODO: Make this check if its a WOrldENtity that is pickupable if so then pick it up if there are slots free
     }
 
     private void changeOrientation(string movement, float Time)
