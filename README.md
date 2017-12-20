@@ -1,3 +1,1 @@
-## Project: Dungeon (Name Subject to Change)
-
-A 2.5D rogue-like game....
+# PROJECT MOVED TO https://git.stardebris.net/Koeqatel/Project-Dungeon
